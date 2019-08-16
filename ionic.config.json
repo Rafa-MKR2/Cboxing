@@ -1,5 +1,7 @@
 {
   "name": "warehouse",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

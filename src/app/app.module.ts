@@ -15,6 +15,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { WsmServiceService } from './services/wsm-service.service';
 import { environment } from '../environments/environment';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { environment } from '../environments/environment';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    WsmServiceService
+    WsmServiceService,
+    BarcodeScanner
   ],
   bootstrap: [AppComponent]
 })

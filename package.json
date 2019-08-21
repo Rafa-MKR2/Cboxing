@@ -28,7 +28,9 @@
     "@ionic/angular": "^4.7.1",
     "angularfire2": "^5.2.1",
     "cordova-android": "^8.0.0",
+    "cordova-plugin-screen-orientation": "^3.0.2",
     "core-js": "^2.5.4",
+    "es6-promise-plugin": "^4.2.2",
     "firebase": "^6.3.5",
     "phonegap-plugin-barcodescanner": "^8.1.0",
     "rxjs": "~6.5.1",
@@ -78,7 +80,14 @@
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
       "cordova-plugin-ionic-keyboard": {},
+<<<<<<< HEAD
       "phonegap-plugin-barcodescanner": {}
+=======
+      "phonegap-plugin-barcodescanner": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "cordova-plugin-screen-orientation": {}
+>>>>>>> bedeebde23891a544161e81876f0d57a1563f2da
     },
     "platforms": [
       "android"

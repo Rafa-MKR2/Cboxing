@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-tabs>
+        <ion-tab-bar slot="bottom" color="primary">
+          <ion-tab-button tab="tab1">
+            <ion-icon name="home"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-tab-button>
+      
+          <ion-tab-button tab="tab2">
+            <ion-icon name="apps"></ion-icon>
+            <ion-label>Feed</ion-label>
+          </ion-tab-button>
+      
+          <ion-tab-button tab="tab3">
+            <ion-icon name="settings"></ion-icon>
+            <ion-label>Settings</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      
+      </ion-tabs>
+    <ion-toolbar  class="header-background-color">
+      <ion-buttons  color="light" slot="start">
+        <ion-back-button  color="light"></ion-back-button>
+      </ion-buttons>
+      <ion-title  color="light">Consulta</ion-title>
+
+
+    </ion-toolbar>
+    
+  </ion-header>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="lerCodigo()" color="light">
+        <ion-icon color="dark" name="barcode"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>    
+
+    <ion-content>
+      
+        <ion-grid>
+          <ion-row justify-content-center>
+            <ion-col>
+                <br>
+                <br>
+                
+                <ion-searchbar #buscaCodigo  [(ngModel)]="codigo" placeholder="Codigo do Produto" showCancelButton="focus"></ion-searchbar>
+              
+            
+              
+            </ion-col>
+
+
+          </ion-row>
+
+       
+
+        </ion-grid>
+
+
+</ion-content>

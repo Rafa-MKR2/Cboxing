@@ -5,7 +5,9 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' },
-  { path: 'buscar', loadChildren: './buscar/buscar.module#BuscarPageModule' },
+  { path: 'buscar', loadChildren: './buscar/buscar.module#BuscarPageModule' },  { path: 'conferir', loadChildren: './conferencia/conferir/conferir.module#ConferirPageModule' },
+  { path: 'colsulta', loadChildren: './colsulta/colsulta.module#ColsultaPageModule' },
+
 ];
 
 @NgModule({

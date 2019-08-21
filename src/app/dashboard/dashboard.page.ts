@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 import { ToastController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,30 +10,22 @@ import { ToastController } from '@ionic/angular';
 })
 export class DashboardPage implements OnInit {
 
-  constructor(public barcodeScanner: BarcodeScanner, public toast : ToastController ) { }
+  constructor(
+     public barcodeScanner: BarcodeScanner,
+     public router : Router,
+     public toast : ToastController ) { }
 
   ngOnInit() {
   }
 
-  async presentToast(mensager : string) {
-    const toast = await this.toast.create({
-      message: mensager,
-      duration: 5000,
-      position : 'top'
-    });
-    toast.present();
+
+
+
+  consulta(){
+    this.router.navigate(['colsulta'])
 
   }
 
-
-
-  lerCodigo(){
-    this.barcodeScanner.scan().then(barcodeData => {
-      this.presentToast('codigo : '+barcodeData)
-      console.log(barcodeData)
-     }).catch(err => {
-      this.presentToast('error : '+err)
-     });
-  }
+ 
 
 }

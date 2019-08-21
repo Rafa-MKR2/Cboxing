@@ -27,8 +27,7 @@ export class HomePage {
     }).catch(e=> this.presentToast(this.error(e.code)))
   }
 
-
-
+  
   error(erro: string): string{
     let feedback = ""
      switch(erro) {
@@ -48,8 +47,11 @@ export class HomePage {
            break;
 
            case "auth/network-request-failed":
-             feedback = "Usuário nao encontrado!"
+             feedback = "Falha na conexão com a internet!"
            break;
+          case "auth/argument-error": 
+           feedback = "preencha todos os campos!"
+         break;
          default:
              feedback = erro;
        }

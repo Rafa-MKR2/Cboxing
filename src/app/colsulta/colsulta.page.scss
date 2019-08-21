@@ -14,7 +14,7 @@ ion-grid {
 }
 
 ion-row {
-    height: 120px;
+    height: $height100;
 }
 
 ion-col {
@@ -30,6 +30,13 @@ ion-label {
     color: #6ac259;
 }
 
+ion-toolbar {
+    background: $white-color;
+}
+
+.header-background-color{
+    --background:$white-color;
+}
 @media (min-width: 240px) and (max-width: 768px) {
     ion-grid {
         background: $white-color;

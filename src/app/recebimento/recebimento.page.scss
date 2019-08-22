@@ -3,13 +3,18 @@ $white-color: #0C163D;
 $height100: 100%;
 
 
-button{
+ion-item{
     background-color: #37DC94;
     border-radius: 7px;
+    margin: 5px;
+
+}
+ion-list{
+    background: $white-color;
 
 }
 
-ion-grid {
+ion-grid{
     width:100%;
     height: $height100;
     background: #1f1d1d;
@@ -32,6 +37,13 @@ ion-label {
     color: #6ac259;
 }
 
+ion-toolbar {
+    background: $white-color;
+}
+
+.header-background-color{
+    --background:$white-color;
+}
 @media (min-width: 240px) and (max-width: 768px) {
     ion-grid {
         background: $white-color;

@@ -1,0 +1,60 @@
+<ion-header>
+   
+  <ion-toolbar  class="header-background-color">
+    <ion-buttons  color="light" slot="start">
+      <ion-back-button  color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title  color="light">Pesquisa</ion-title>
+
+
+  </ion-toolbar>
+  
+</ion-header>
+
+
+  <ion-content>
+    
+      <ion-grid>
+<br>
+<br>
+<br>
+
+        <ion-row justify-content-center>
+          <ion-col size="4">
+            <div class="ion-text-start">
+                <button (click)="caixaPage()" >
+                    <img height="80" width="80" src="../../../assets/warehouse.png">
+                    Caixa
+                </button>
+            </div>
+          </ion-col >
+        </ion-row>
+
+      <ion-row justify-content-center>
+          <ion-col size="4">
+            <div class="ion-text-start">
+                <button (click)="objetoPage()"  >
+                    <img height="80" width="80" src="../../../assets/barcode.png">
+                    Objeto
+                </button>
+            </div>
+          </ion-col >
+        </ion-row>
+
+        <ion-row justify-content-center>
+            <ion-col size="4">
+              <div class="ion-text-start">
+                  <button (click)="localizacaoPage()"  >
+                      <img height="80" width="80" src="../../../assets/location.png">
+                      Localização
+                  </button>
+              </div>
+            </ion-col >
+          </ion-row>
+  
+       
+
+      </ion-grid>
+
+
+</ion-content>

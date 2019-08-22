@@ -4,10 +4,12 @@
 <ion-content>
  
       <ion-grid>
+        <br>
+        <br>
         <ion-row>
           <ion-col size="4">
             <div class="ion-text-start">
-                <button  >
+                <button (click)="recebimentoPage()" >
                     <img height="80" width="80" src="../../assets/truck.png">
                     Recebimento
                 </button>
@@ -15,7 +17,7 @@
           </ion-col >
           <ion-col size="4">
             <div class="ion-text-end">
-                <button >
+                <button (click)="enderecamentoPage()">
                     <img height="80" width="80" src="../../assets/location.png">
                     Endereçamento
                 </button>
@@ -23,7 +25,7 @@
           </ion-col>
           <ion-col size="4">
             <div class="ion-text-center">
-                <button >
+                <button (click)="tranferenciaPage()" >
                     <img height="80" width="80" src="../../assets/storage.png">
                     Tranferencia
                 </button>
@@ -35,7 +37,7 @@
         <ion-row>
             <ion-col size="4">
               <div class="ion-text-start">
-                  <button  >
+                  <button (click)="atendimentoPage()" >
                       <img height="80" width="80" src="../../assets/delivery-man.png">
                       Atendimento
                   </button>
@@ -51,7 +53,7 @@
             </ion-col>
             <ion-col size="4">
               <div class="ion-text-center">
-                  <button >
+                  <button (click)="conferenciaPage()">
                       <img height="80" width="80" src="../../assets/inspection.png">
                       Conferencia
                   </button>
@@ -93,7 +95,7 @@
             <ion-row>
                 <ion-col size="4">
                   <div class="ion-text-start">
-                      <button  >
+                      <button  (click)="configuracaoPage()">
                           <img height="80" width="80" src="../../assets/settings.png">
                           Configurações
                       </button>
@@ -109,7 +111,7 @@
                 </ion-col>
                 <ion-col size="4">
                   <div class="ion-text-center">
-                      <button >
+                      <button (click)="sair()">
                           <img height="80" width="80" src="../../assets/exit.png">
                           Sair
                       </button>
@@ -117,7 +119,6 @@
                 </ion-col>
       
               </ion-row>
-
       </ion-grid>
 
 

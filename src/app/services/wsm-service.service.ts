@@ -21,4 +21,9 @@ export class WsmServiceService {
    }
 
 
+
+   exitLogin(){
+    return this.auth.auth.signOut()
+   }
+
 }

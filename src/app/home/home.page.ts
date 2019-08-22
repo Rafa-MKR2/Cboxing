@@ -12,7 +12,6 @@ export class HomePage {
 
     public email: string;
     public senha: string;
-  ErrorFirebase: any;
 
   constructor(
     private serviceWsm : WsmServiceService, 
@@ -22,7 +21,8 @@ export class HomePage {
   logger(){
 
     this.serviceWsm.login(this.email,this.senha).then(e=>{
-      this.router.navigate(['dashboard'])
+      this.router.navigate(['dashboard'], {replaceUrl: true})
+
 
     }).catch(e=> this.presentToast(this.error(e.code)))
   }

@@ -80,10 +80,14 @@
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
       "cordova-plugin-ionic-keyboard": {},
+<<<<<<< HEAD
+      "phonegap-plugin-barcodescanner": {}
+=======
       "phonegap-plugin-barcodescanner": {
         "ANDROID_SUPPORT_V4_VERSION": "27.+"
       },
       "cordova-plugin-screen-orientation": {}
+>>>>>>> bedeebde23891a544161e81876f0d57a1563f2da
     },
     "platforms": [
       "android"

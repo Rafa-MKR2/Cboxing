@@ -1,0 +1,56 @@
+
+$white-color: #0C163D;
+$height100: 100%;
+
+
+button{
+    background-color: #37DC94;
+    border-radius: 7px;
+
+}
+
+ion-grid {
+    width:100%;
+    height: $height100;
+    background: #1f1d1d;
+}
+
+ion-row {
+    height: 120px;
+}
+
+ion-col {
+    border: 1px solid #9ec6e0;
+    background: $white-color;
+}
+
+ion-button {
+    font-weight: 300;
+}
+ion-tab-bar {
+    background: $white-color;
+
+}
+ion-tab-button{
+    background: $white-color;
+}
+
+ion-label {
+    color: #6ac259;
+}
+
+ion-toolbar {
+    background: $white-color;
+}
+
+.header-background-color{
+    --background:$white-color;
+}
+@media (min-width: 240px) and (max-width: 768px) {
+    ion-grid {
+        background: $white-color;
+    }
+    ion-col {
+        border: none;
+    }
+}

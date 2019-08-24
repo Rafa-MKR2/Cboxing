@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LeitorDeCodigo } from 'src/app/services/LeitorCodigoDebarra';
 
 @Component({
   selector: 'app-pesquisa-estoque',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pesquisa-estoque.page.scss'],
 })
 export class PesquisaEstoquePage implements OnInit {
-
-  constructor() { }
+private codigoObjeto : string;
+  constructor(private LeitorCodeBarra : LeitorDeCodigo) { }
 
   ngOnInit() {
   }
 
+  lerCodigo(){
+    return this.LeitorCodeBarra.lerCodigo().then(code=> this.codigoObjeto= code)
+  }
 }

@@ -20,6 +20,8 @@ const routes: Routes = [
   { path: 'configuracao', loadChildren: './configuracao/configuracao.module#ConfiguracaoPageModule' },
   { path: 'separacao', loadChildren: './separacao/separacao.module#SeparacaoPageModule' },
   { path: 'inventario', loadChildren: './inventario/inventario.module#InventarioPageModule' },
+  { path: 'conferidos', loadChildren: './conferencia/conferidos/conferidos.module#ConferidosPageModule' },
+
 
 
 

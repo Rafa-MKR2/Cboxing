@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LeitorDeCodigo } from '../services/LeitorCodigoDebarra';
 
 @Component({
   selector: 'app-transferencia',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./transferencia.page.scss'],
 })
 export class TransferenciaPage implements OnInit {
+  
+  private codigoTranferencia : string
 
-  constructor() { }
+  constructor(private LeitorCodeBarra : LeitorDeCodigo) { }
 
   ngOnInit() {
   }
 
+
+    lerCodigo(){
+      return this.LeitorCodeBarra.lerCodigo().then(code=> this.codigoTranferencia= code)
+    }
 }

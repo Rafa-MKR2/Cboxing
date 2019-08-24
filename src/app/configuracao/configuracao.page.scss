@@ -6,22 +6,16 @@ $height100: 100%;
 button{
     background-color: #37DC94;
 }
-
-ion-grid {
-    width:100%;
-    height: $height100;
-    background: #1f1d1d;
-}
-
-ion-row {
-    height: $height100;
-}
-
-ion-col {
-    border: 1px solid #9ec6e0;
+ion-list{
     background: $white-color;
-}
 
+}
+ion-item{
+    background-color: #37DC94;
+    border-radius: 7px;
+    margin: 5px;
+
+}
 ion-button {
     font-weight: 300;
 }

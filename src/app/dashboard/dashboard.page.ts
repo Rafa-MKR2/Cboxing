@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
-import { ToastController } from '@ionic/angular';
+import { ToastController, AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { WsmServiceService } from '../services/wsm-service.service';
 
@@ -15,6 +15,7 @@ export class DashboardPage implements OnInit {
      public barcodeScanner: BarcodeScanner,
      public router : Router,
      private service : WsmServiceService,
+     private alert :  AlertController,
      public toast : ToastController ) { 
     }
 
@@ -73,10 +74,30 @@ export class DashboardPage implements OnInit {
 
 
   sair(){
-    this.service.exitLogin().then(()=>{
-      this.router.navigate(['home'], {replaceUrl: true})
-
+    this.service.exitLogin().then(()=>{   
+         return   this.presentAlert('Sair!', 'Tem certeza que deseja sair?')
     })
+  }
+
+
+  async presentAlert(titulo: string, mensagem: string) {
+
+    const alert = await this.alert.create({
+      header: titulo,
+      message: mensagem,
+      buttons: [
+        {
+          text: 'Não',
+          role: 'cancel',
+          handler: () => console.log('Cancel clicked')
+        },
+        {
+          text: 'Sim, sair agora!',
+          handler: () => this.router.navigate(['home'], {replaceUrl: true})
+        }
+      ]
+    });
+   return await alert.present();
   }
 
 }

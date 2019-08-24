@@ -1,9 +1,37 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>conferir</ion-title>
+    <ion-toolbar  class="header-background-color">
+      <ion-buttons  color="light" slot="start">
+        <ion-back-button  color="light"></ion-back-button>
+      </ion-buttons>
+      <ion-title  color="light">Conferência</ion-title>    
+    </ion-toolbar>
+    
   </ion-toolbar>
+  
 </ion-header>
 
 <ion-content>
+      
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tabs="/itens" >
+        <ion-label color="light">A Conferir</ion-label>
+        <ion-badge color="success">6</ion-badge>
+      </ion-tab-button>
+  
+      <ion-tab-button tabs='/conferidos' >
+        <ion-label color="light">Conferidos</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 
+
+
+  <ion-grid>
+
+
+
+
+  </ion-grid>
 </ion-content>

@@ -1,9 +1,22 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>transferencia</ion-title>
-  </ion-toolbar>
+    <ion-toolbar  class="header-background-color">
+        <ion-buttons  color="light" slot="start">
+          <ion-back-button  color="light"></ion-back-button>
+        </ion-buttons>
+        <ion-title  color="light">Transferência</ion-title>
+      </ion-toolbar>
+      <ion-fab vertical="top" horizontal="end" slot="fixed">
+          <ion-fab-button (click)="lerCodigo()" color="light">
+            <ion-icon color="dark" name="barcode"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>    
+    
 </ion-header>
 
 <ion-content>
+    <br>
+    <br>
+    <ion-searchbar #buscaCodigo  [(ngModel)]="codigoTranferencia" placeholder="Codigo do Produto" showCancelButton="focus"></ion-searchbar>
+
 
 </ion-content>

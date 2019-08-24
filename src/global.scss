@@ -26,43 +26,8 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 
+ion-content{
+    --background:  #0C163D;
 
-$white-color: #0C163D;
-$height100: 100%;
 
-
-button{
-    background-color: #37DC94;
-}
-
-ion-grid {
-    width:100%;
-    height: $height100;
-    background: #1f1d1d;
-}
-
-ion-row {
-    height: $height100;
-}
-
-ion-col {
-    border: 1px solid #9ec6e0;
-    background: $white-color;
-}
-
-ion-button {
-    font-weight: 300;
-}
-
-ion-label {
-    color: #6ac259;
-}
-
-@media (min-width: 240px) and (max-width: 768px) {
-    ion-grid {
-        background: $white-color;
-    }
-    ion-col {
-        border: none;
-    }
 }
